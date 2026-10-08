@@ -1,5 +1,160 @@
+:root {
+    --bg: #ffffff;
+    --text: #1c1a5c;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+
+body {
+    background: var(--bg);
+    color: var(--text)
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', serif;
+}
+
+.app {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+section {
+    padding: 14px 0;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 14px;
+}
+
+.section-head h2 {
+    font-size: 1.05rem;
+}
+
+.see-more {
+    font-size: .68rem;
+    color: var(--muted);
+    border: 1px solid;
+    padding: 3px 11px;
+    border-radius: 20px;
+}
+
+.rating {
+    font-size: .72rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.star {
+    color: yellow;
+    font-size: .85rem;
+}
+
+.now-list {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 4px 10px 15px;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 118px;
+    scroll-snap-align: start;
+}
+
+.card img {
+    width: 118px;
+    height: 176px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: .82rem;
+    margin-bottom: 4px;
+}
+
+.pop-list {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.pop-card {
+    display: flex;
+    gap: 14px;
+}
+
+.pop-card img {
+    width: 85px;
+    height: 127px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex: none;
+}
+
+.pop-card h3 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.pop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.pop li {
+    font-size: .62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+
+.movie-pic {
+    background-image: url("https: //image.tmdb.org/t/p/w780");
 }
