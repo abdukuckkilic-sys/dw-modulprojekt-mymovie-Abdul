@@ -5,12 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="js/token.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/detail.js" defer></script>
     <title>MyMovies</title>
 </head>
 
 <body>
+    <div class="app">
+        <header class="topbar">
+            <h1 class="overskrift">MyMovies</h1>
+        </header>
 
+        <main>
+            <section>
+                <section>
+                    <div class="section-head">
+                        <h2>Now Showing</h2><a class="see-more" href="#nowShowing">See more</a>
+                    </div>
+                    <div id="nowShowing" class="now-list"></div>
+                </section>
+            </section>
+
+            <div class="section-head">
+                <h2>Popular</h2><a class="see-more" href="#popular">See more</a>
+            </div>
+            <div id="popular" class="pop-list"></div>
+        </main>
+
+        <footer class="bottom-footer">
+            <nav>
+                <a href="index.html"><img src="img/Bookmark.svg" alt="movies"></a>
+                <img src="img/Shape.svg" alt="ticket">
+                <img src="img/Shape (1).svg" alt="gemte">
+            </nav>
+        </footer>
+
+
+
+
+
+
+    </div>
 </body>
 
 </html>
